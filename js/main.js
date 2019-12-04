@@ -1,12 +1,18 @@
-window.onload = function() {
-	var tags = document.getElementsByTagName('div')
-	for(var i = 0; i < tags.length; ++i) {
-		var tag = tags[i]
-		if(tag.classList.contains('active') || tag.classList.contains('inactive')) {
-			tag.onclick = function() {
-				this.classList.toggle('inactive')
-				this.classList.toggle('active')
-			}
-		}
+const createOverlay = () => {
+	const overlay = document.createElement('div')
+	overlay.classList.add('inactive')
+	overlay.onclick = function() {
+		this.classList.toggle('inactive')
+		this.classList.toggle('active')
 	}
+	return overlay
+}
+
+const createOverlays = tagName => {
+	Array.prototype.forEach.call(document.getElementsByTagName(tagName), golden => golden.append(createOverlay()))
+}
+
+window.onload = () => {
+	createOverlays('golden')
+	createOverlays('moon')
 }

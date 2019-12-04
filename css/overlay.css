@@ -1,0 +1,10 @@
+.inactive {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 0, 255, 0.5);
+}
+
+.active {
+	width: 100%;
+	height: 100%;
+}
