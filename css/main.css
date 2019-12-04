@@ -1,0 +1,46 @@
+.container {
+	width: 320px;
+	height: 480px;
+	background: #ff00ff;
+}
+
+.row {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	font-size: 0;
+}
+
+.inactive {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 0, 255, 0.5);
+}
+
+.active {
+	width: 100%;
+	height: 100%;
+}
+
+.golden {
+	display: inline-block;
+	width: 56px;
+	height: 72px;
+	margin-left: 4px;
+	margin-right: 4px;
+	background: url("../img/golden-active.png");
+}
+
+.winged-golden {
+	display: inline-block;
+	width: 160px;
+	height: 72px;
+	background: url("../img/winged-golden-active.png");
+}
+
+.moon {
+	display: inline-block;
+	width: 160px;
+	height: 72px;
+	background: url("../img/moon-active.png");
+}
